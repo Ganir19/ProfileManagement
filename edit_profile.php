@@ -66,7 +66,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     </form>
 
 
-    <h3>Your Current Profile Image</h3>
+    <h3>Profile</h3>
     <?php if (!empty($user['profile_image'])): ?>
         <img src="data:image/jpeg;base64,<?php echo base64_encode($user['profile_image']); ?>" alt="Profile Image" class="profile-image">
     <?php else: ?>
